@@ -52,10 +52,11 @@ This command will run bison and flex, then compile the generated files with gcc 
 This command will run the comp executable with test1.c, then pipe the output to the cross_compil.py Python script for processing.
 
 # Prerequisites
-bison
-flex
-gcc
-python3
+`bison`
+`flex`
+`gcc`
+`python3`
+
 Ensure these tools are installed before running the process.
 
 # Additional Information
