@@ -1,0 +1,15 @@
+0.6
+2018.2
+Jun 14 2018
+20:07:38
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sim_1/new/chemin_donnees.vhd,1685395034,vhdl,,,,chemin_donnees,,,,,,,,
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sim_1/new/test_ALU.vhd,1685452486,vhdl,,,,test_alu,,,,,,,,
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sim_1/new/test_banc_registre.vhd,1685183600,vhdl,,,,test_banc_registre,,,,,,,,
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sources_1/new/ALEA.vhd,1685467037,vhdl,,,,alea,,,,,,,,
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd,1685358909,vhdl,,,,alu,,,,,,,,
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sources_1/new/DI_EX.vhd,1685144398,vhdl,,,,ex_mem,,,,,,,,
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sources_1/new/LI_DI.vhd,1685354512,vhdl,,,,li_di,,,,,,,,
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sources_1/new/MD.vhd,1685465590,vhdl,,,,md,,,,,,,,
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sources_1/new/MI.vhd,1685469126,vhdl,,,,mi,,,,,,,,
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sources_1/new/banc_registre.vhd,1685465381,vhdl,,,,banc_registre,,,,,,,,
+/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sources_1/new/compteur_8bits.vhd,1685391653,vhdl,,,,compteur_8bits,,,,,,,,

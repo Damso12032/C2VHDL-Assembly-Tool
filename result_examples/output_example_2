@@ -1,0 +1,58 @@
+./comp "test1.c"
+variable @ret ajouté avec profondeur 0
+variable @val ajouté avec profondeur 0
+variable a ajouté avec profondeur 0
+free last
+Declaration avec  affectation
+variable b ajouté avec profondeur 0
+Declaration avec  affectation
+free last
+Declaration avec  affectation
+update op2
+Declaration avec  affectation
+fin condIf avec else
+return effectué
+variable  supprimé
+variable  supprimé
+variable b supprimé
+variable a supprimé
+variable @val supprimé
+variable @ret supprimé
+fin de fonction 
+L0: AFC 3 2
+L1: AFC 4 3
+L2: ADD 3 3 4
+L3: COP 2 3
+L4: AFC 4 5
+L5: COP 3 4
+L6: COP 4 2
+L7: AFC 5 3
+L8: EQU 4 4 5
+L9: JMPF 4 13
+L10: AFC 5 8
+L11: COP 3 5
+L12: JMP 15
+L13: AFC 5 10
+L14: COP 2 5
+L15: AFC 5 5
+L16: COP 1 5
+L17: RET 0
+python cross_compil.py
+AFC R03 02
+AFC R04 03
+ADD R03 R03 R04
+STR @02 R03
+AFC R04 05
+STR @03 R04
+LOAD R04 @02
+AFC R05 03
+EQU R04 R04 R05
+JMF R04 0d
+AFC R05 08
+STR @03 R05
+JMP 0f
+AFC R05 0a
+STR @02 R05
+AFC R05 05
+STR @01 R05
+['0x06030200', '0x06040300', '0x01030304', '0x08020300', '0x06040500', '0x08030400', '0x07040200', '0x06050300', '0x0B040405', '0x0E040d00', '0x06050800', '0x08030500', '0x0D0f0000', '0x06050a00', '0x08020500', '0x06050500', '0x08010500']

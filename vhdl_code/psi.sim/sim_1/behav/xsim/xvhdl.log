@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sources_1/new/ALEA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALEA
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sall/Bureau/4IR/Projet_systeme_info/PSI/psi/psi.srcs/sources_1/new/MI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MI

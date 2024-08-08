@@ -1,0 +1,365 @@
+
+*** Running vivado
+    with args -log ALU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source ALU.tcl -notrace
+Command: synth_design -top ALU -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 68251 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1255.273 ; gain = 83.699 ; free physical = 57091 ; free virtual = 69628
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'ALU' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (1#1) [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:48]
+WARNING: [Synth 8-3917] design ALU has port N driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port O driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port Z driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port C driven by constant 0
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1297.898 ; gain = 126.324 ; free physical = 57102 ; free virtual = 69639
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1297.898 ; gain = 126.324 ; free physical = 57102 ; free virtual = 69640
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1305.902 ; gain = 134.328 ; free physical = 57101 ; free virtual = 69638
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'N_reg' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'O_reg' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'Z_reg' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:55]
+WARNING: [Synth 8-327] inferring latch for variable 'aux_reg' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'aux_mul_reg' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1313.910 ; gain = 142.336 ; free physical = 57093 ; free virtual = 69630
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
++---Muxes : 
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
++---Muxes : 
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design ALU has port N driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port O driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port Z driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port C driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port S[7] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port S[6] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port S[5] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port S[4] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port S[3] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port S[2] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port S[1] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port S[0] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (N_reg) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'N_reg/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:52]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:52]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:52]
+WARNING: [Synth 8-3332] Sequential element (O_reg) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'O_reg/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:53]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:53]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:53]
+WARNING: [Synth 8-3332] Sequential element (Z_reg) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'Z_reg/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:54]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:54]
+WARNING: [Synth 8-3332] Sequential element (C_reg) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'C_reg/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:55]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:55]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:55]
+WARNING: [Synth 8-3332] Sequential element (aux_reg[8]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_reg[8]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-3332] Sequential element (aux_reg[7]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_reg[7]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-3332] Sequential element (aux_reg[6]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_reg[6]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-3332] Sequential element (aux_reg[5]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_reg[5]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-3332] Sequential element (aux_reg[4]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_reg[4]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-3332] Sequential element (aux_reg[3]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_reg[3]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-3332] Sequential element (aux_reg[2]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_reg[2]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-3332] Sequential element (aux_reg[1]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_reg[1]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-3332] Sequential element (aux_reg[0]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_reg[0]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:56]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[15]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[15]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[14]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[14]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[13]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[13]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[12]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[12]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[11]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[11]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[10]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[10]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[9]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[9]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[8]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[8]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[7]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[7]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[6]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[6]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[5]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[5]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[4]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[4]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[3]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[3]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[2]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[2]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[1]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[1]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+WARNING: [Synth 8-3332] Sequential element (aux_mul_reg[0]) is unused and will be removed from module ALU.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'aux_mul_reg[0]/Q' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/badaou/Bureau/PSI/psi/psi.srcs/sources_1/new/ALU_.vhd:57]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56944 ; free virtual = 69483
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56943 ; free virtual = 69482
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56943 ; free virtual = 69482
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56943 ; free virtual = 69482
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56943 ; free virtual = 69482
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56943 ; free virtual = 69482
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56943 ; free virtual = 69482
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56943 ; free virtual = 69482
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56943 ; free virtual = 69482
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    12|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    12|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56943 ; free virtual = 69482
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 87 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.840 ; gain = 234.266 ; free physical = 56943 ; free virtual = 69482
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1405.848 ; gain = 234.266 ; free physical = 56947 ; free virtual = 69485
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+10 Infos, 52 Warnings, 87 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1497.910 ; gain = 338.090 ; free physical = 56902 ; free virtual = 69440
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/badaou/Bureau/PSI/psi/psi.runs/synth_1/ALU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ALU_utilization_synth.rpt -pb ALU_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1521.922 ; gain = 0.000 ; free physical = 56893 ; free virtual = 69432
+INFO: [Common 17-206] Exiting Vivado at Mon May 15 14:34:21 2023...

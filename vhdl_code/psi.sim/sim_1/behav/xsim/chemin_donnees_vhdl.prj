@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../psi.srcs/sources_1/new/ALEA.vhd" \
+"../../../../psi.srcs/sources_1/new/ALU_.vhd" \
+"../../../../psi.srcs/sources_1/new/DI_EX.vhd" \
+"../../../../psi.srcs/sources_1/new/LI_DI.vhd" \
+"../../../../psi.srcs/sources_1/new/MD.vhd" \
+"../../../../psi.srcs/sources_1/new/MI.vhd" \
+"../../../../psi.srcs/sources_1/new/banc_registre.vhd" \
+"../../../../psi.srcs/sources_1/new/compteur_8bits.vhd" \
+"../../../../psi.srcs/sim_1/new/chemin_donnees.vhd" \
+
+# Do not sort compile order
+nosort
